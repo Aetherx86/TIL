@@ -1,0 +1,39 @@
+stages:
+  - test
+  - render
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+test:
+  stage: test
+  image: python:3.12-slim
+  before_script:
+    - apt-get update && apt-get install -y --no-install-recommends ffmpeg
+    - python -m pip install --upgrade pip
+    - pip install -e .[dev]
+  script:
+    - pytest -v --tb=short
+
+render-smoke-test:
+  stage: render
+  image: python:3.12-slim
+  before_script:
+    - apt-get update && apt-get install -y --no-install-recommends ffmpeg
+    - pip install -e .
+  script:
+    - math-video-engine list
+    - math-video-engine inspect VectorLinearCombinationScene
+    - math-video-engine render VectorLinearCombinationScene --preset preview --fps 15 --format mp4
+    - math-video-engine render MatrixTransformationScene --preset preview --fps 15 --format gif
+    - math-video-engine render StrongGoldbachConjectureScene --preset preview --fps 15 --format mp4
+    - math-video-engine render CollatzConjectureScene --preset preview --fps 15 --format mp4
+  artifacts:
+    paths:
+      - output/*.mp4
+      - output/*.gif
+    expire_in: 1 week

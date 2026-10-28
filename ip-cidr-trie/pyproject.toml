@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ip-cidr-trie"
+version = "0.1.0"
+description = "High-performance binary Radix Trie for IPv4 CIDR matching and egress access control"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = []

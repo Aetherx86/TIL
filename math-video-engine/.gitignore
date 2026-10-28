@@ -1,0 +1,29 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Output media (generated videos/frames)
+output/*.mp4
+output/*.gif
+output/*.webp
+output/*_frames/
+!output/.gitkeep
+
+# Local virtual environments
+.venv/
+env/
+venv/

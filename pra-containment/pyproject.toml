@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pra-containment"
+version = "0.1.0"
+description = "Probabilistic Risk Assessment and Common-Cause Failure Simulation for AI Agent Containment"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Jeong Hoon Kim" }
+]
+dependencies = [
+    "numpy>=1.20.0"
+]
+
+[project.scripts]
+pra-containment = "pra_containment.cli:main"
