@@ -1,8 +1,8 @@
-# 📚 Absolute Pain
+#  Absolute Pain
 
 [![Top Langs](https://github-stats-extended.vercel.app/api?username=Omakasekim)](https://github.com/stats-organization/github-stats-extended)
 ![](https://tokei.rs/b1/github/omakasekim/TIL)
-## 📒 자료구조 및 알고리즘
+##  자료구조 및 알고리즘
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 
@@ -13,7 +13,7 @@
   * Moden Operating Systems Fourth Edition
 
 
-## 📒 Web Programming
+##  Web Programming
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -32,7 +32,7 @@
   * Quick Start Vue.js
   * 실시간 모니터링 시스템을 만들며 정복하는 MEVN 
 
-## 📒 Java + Kopring Boot
+##  Java + Kopring Boot
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white)
@@ -47,7 +47,7 @@
   * 스프링 부트와 AWS로 혼자 구현하는 웹 서비스
 
 
-## 📒 딥러닝
+##  딥러닝
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
